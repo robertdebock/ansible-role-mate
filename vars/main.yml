@@ -25,4 +25,4 @@ _mate_exclude:
   default: []
   RedHat: "{{ ansible_distribution | lower }}-release-matecompiz"
 
-mate_exclude: "{{ _mate_exclude[ansible_os_family] | default(_mate_exclude['default') }}"
+mate_exclude: "{{ _mate_exclude[ansible_os_family] | default(_mate_exclude['default']) }}"
