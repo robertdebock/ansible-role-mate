@@ -8,7 +8,7 @@ _mate_packages:
   RedHat:
     - "@mate-desktop"
     - "@mate-applications"
-  Debain:
+  Debian:
     - mate-desktop
     - mate-hud
     - mate-indicator-applet
@@ -20,3 +20,9 @@ _mate_packages:
     - patterns-mate-mate
 
 mate_packages: "{{ _mate_packages[ansible_os_family] }}"
+
+_mate_exclude:
+  default: []
+  RedHat: "{{ ansible_distribution | lower }}-release-matecompiz"
+
+mate_exclude: "{{ _mate_exclude[ansible_os_family] | default(_mate_exclude['default') }}"

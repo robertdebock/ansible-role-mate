@@ -3,5 +3,5 @@
 - name: install software
   package:
     name: "{{ mate_packages }}"
-    exclude: "fedora-release-matecompiz"
+    exclude: "{{ mate_exclude | default(omit) }}"
     state: present
