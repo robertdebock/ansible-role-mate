@@ -1,11 +1,11 @@
 mate
 =========
 
-Install and configure mate on your system.
+Install MATE on your system.
 
 |Travis|GitHub|Quality|Downloads|
 |------|------|-------|---------|
-|[![travis](https://travis-ci.org/robertdebock/ansible-role-mate.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-mate)|[![github](https://github.com/robertdebock/ansible-role-mate/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mate/actions)|![quality](https://img.shields.io/ansible/quality/)|![downloads](https://img.shields.io/ansible/role/d/)|
+|[![travis](https://travis-ci.org/robertdebock/ansible-role-mate.svg?branch=master)](https://travis-ci.org/robertdebock/ansible-role-mate)|[![github](https://github.com/robertdebock/ansible-role-mate/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mate/actions)|![quality](https://img.shields.io/ansible/quality/47171)|![downloads](https://img.shields.io/ansible/role/d/47171)|
 
 Example Playbook
 ----------------
@@ -92,7 +92,7 @@ This role has been tested on these [container images](https://hub.docker.com/):
 |---------|----|
 |alpine|all|
 |debian|all|
-|el|7, 8|
+|el|7|
 |fedora|all|
 |opensuse|all|
 |ubuntu|bionic|
@@ -103,6 +103,14 @@ The minimum version of Ansible required is 2.7 but tests have been done to:
 - The current version.
 - The development version.
 
+Exceptions
+----------
+
+Some variarations of the build matrix do not work. These are the variations and reasons why the build won't work:
+
+| variation                 | reason                 |
+|---------------------------|------------------------|
+| centos:8 | MATE is not available |
 
 
 Testing
