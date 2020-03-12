@@ -7,7 +7,7 @@ _mate_packages:
     - mate-session-manager
   RedHat:
     - "@mate-desktop"
-    - "@mate-applications"
+    # - "@mate-applications"
   Debian:
     - mate-desktop
     - mate-hud
