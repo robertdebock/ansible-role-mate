@@ -5,3 +5,14 @@
     name: "{{ mate_packages }}"
     exclude: "{{ mate_exclude | default(omit) }}"
     state: present
+  when:
+    - ansible_os_family != "RedHat"
+
+- name: install software with excluded
+  package:
+    name: "{{ mate_packages }}"
+    state: present
+    exclude: "{{ mate_exclude | default(omit) }}"
+  when:
+    - ansible_os_family == "RedHat"
+
