@@ -16,6 +16,7 @@ _mate_packages:
     - mate-menu
     - mate-notification-daemon
     - mate-notification-daemon-common
+    - mate-session
   Suse:
     - patterns-mate-mate
 
