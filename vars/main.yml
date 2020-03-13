@@ -10,7 +10,6 @@ _mate_packages:
     # - "@mate-applications"
   Debian:
     - mate-desktop
-    - mate-hud
     - mate-indicator-applet
     - mate-indicator-applet-common
     - mate-menu
