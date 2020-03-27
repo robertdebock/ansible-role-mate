@@ -15,3 +15,10 @@
   when:
     - ansible_os_family == "RedHat"
 
+- name: ensure NetworkManager is started and enabled
+  service:
+    name: NetworkManager
+    state: started
+    enabled: yes
+  when:
+    ansible_os_family == "RedHat"
