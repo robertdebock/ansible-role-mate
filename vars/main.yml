@@ -7,7 +7,7 @@ _mate_packages:
     - mate-session-manager
   RedHat:
     - "@mate-desktop"
-    # - "@mate-applications"
+    - NetworkManager
   Debian:
     - mate-desktop
     - mate-indicator-applet
