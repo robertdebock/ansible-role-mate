@@ -1,5 +1,6 @@
 ---
 # vars file for mate
+
 _mate_packages:
   Alpine:
     - mate-desktop
