@@ -4,6 +4,9 @@
   package:
     name: "{{ mate_packages }}"
     state: present
+  register: mate_install_software
+  until: mate_install_software is succeeded
+  retries: 3
   when:
     - ansible_os_family != "RedHat"
 
@@ -12,6 +15,9 @@
     name: "{{ mate_packages }}"
     state: present
     exclude: "{{ mate_exclude | default(omit) }}"
+  register: mate_install_software_with_excluded
+  until: mate_install_software_with_excluded is succeeded
+  retries: 3
   when:
     - ansible_os_family == "RedHat"
 
