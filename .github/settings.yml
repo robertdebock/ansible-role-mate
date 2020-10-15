@@ -5,3 +5,4 @@
 repository:
   description: Install MATE on your system.
   homepage: https://robertdebock.nl/
+  topics: mate, ansible, molecule, tox, playbook, hacktoberfest
