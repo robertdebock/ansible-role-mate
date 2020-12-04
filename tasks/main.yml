@@ -1,5 +1,6 @@
 ---
 # tasks file for mate
+
 - name: install software
   package:
     name: "{{ mate_packages }}"
