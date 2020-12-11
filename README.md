@@ -2,9 +2,9 @@
 
 Install MATE on your system.
 
-|Travis|GitHub|Quality|Downloads|Version|
-|------|------|-------|---------|-------|
-|[![travis](https://travis-ci.com/robertdebock/ansible-role-mate.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-mate)|[![github](https://github.com/robertdebock/ansible-role-mate/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mate/actions)|[![quality](https://img.shields.io/ansible/quality/47171)](https://galaxy.ansible.com/robertdebock/mate)|[![downloads](https://img.shields.io/ansible/role/d/47171)](https://galaxy.ansible.com/robertdebock/mate)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-mate.svg)](https://github.com/robertdebock/ansible-role-mate/releases/)|
+|Travis|GitHub|GitLab|Quality|Downloads|Version|
+|------|------|------|-------|---------|-------|
+|[![travis](https://travis-ci.com/robertdebock/ansible-role-mate.svg?branch=master)](https://travis-ci.com/robertdebock/ansible-role-mate)|[![github](https://github.com/robertdebock/ansible-role-mate/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-mate/actions)|[![gitlab](https://gitlab.com/robertdebock/ansible-role-mate/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-mate)|[![quality](https://img.shields.io/ansible/quality/47171)](https://galaxy.ansible.com/robertdebock/mate)|[![downloads](https://img.shields.io/ansible/role/d/47171)](https://galaxy.ansible.com/robertdebock/mate)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-mate.svg)](https://github.com/robertdebock/ansible-role-mate/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
