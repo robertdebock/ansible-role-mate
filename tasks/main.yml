@@ -1,25 +1,23 @@
 ---
 # tasks file for mate
 
-- name: install software
-  package:
-    name: "{{ mate_packages }}"
-    state: present
-  when:
-    - ansible_os_family != "RedHat"
+- name: configure redhat
+  block:
+    - name: install software
+      package:
+        name: "{{ mate_packages }}"
+        state: present
 
-- name: install software with excluded
-  package:
-    name: "{{ mate_packages }}"
-    state: present
-    exclude: "{{ mate_exclude | default(omit) }}"
+    - name: install software with excluded
+      package:
+        name: "{{ mate_packages }}"
+        state: present
+        exclude: "{{ mate_exclude | default(omit) }}"
+
+    - name: ensure NetworkManager is started and enabled
+      service:
+        name: NetworkManager
+        state: started
+        enabled: yes
   when:
     - ansible_os_family == "RedHat"
-
-- name: ensure NetworkManager is started and enabled
-  service:
-    name: NetworkManager
-    state: started
-    enabled: yes
-  when:
-    ansible_os_family == "RedHat"
