@@ -4,18 +4,18 @@
 - name: configure redhat
   block:
     - name: install software
-      package:
+      ansible.builtin.package:
         name: "{{ mate_packages }}"
         state: present
 
     - name: install software with excluded
-      package:
+      ansible.builtin.package:
         name: "{{ mate_packages }}"
         state: present
         exclude: "{{ mate_exclude | default(omit) }}"
 
     - name: ensure NetworkManager is started and enabled
-      service:
+      ansible.builtin.service:
         name: NetworkManager
         state: started
         enabled: yes
