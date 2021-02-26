@@ -5,6 +5,8 @@
   ansible.builtin.package:
     name: "{{ mate_packages }}"
     state: present
+  when:
+    - ansible_os_family != "RedHat"
 
 - name: configure redhat
   block:
@@ -13,11 +15,11 @@
         name: "{{ mate_packages }}"
         state: present
         exclude: "{{ mate_exclude | default(omit) }}"
-      when:
-        - ansible_os_family == "RedHat"
 
     - name: ensure NetworkManager is started and enabled
       ansible.builtin.service:
         name: NetworkManager
         state: started
         enabled: yes
+  when:
+    - ansible_os_family == "RedHat"
