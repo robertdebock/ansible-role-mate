@@ -10,13 +10,9 @@ _mate_packages:
     - "@mate-desktop"
     - NetworkManager
   Debian:
-    - mate-desktop
-    - mate-indicator-applet
-    - mate-indicator-applet-common
-    - mate-menu
-    - mate-notification-daemon
-    - mate-notification-daemon-common
-    - mate-session-manager
+    - mate-desktop-environment
+  # Ubuntu:
+  #   - ubuntu-mate-desktop
   Suse:
     - patterns-mate-mate
 
