@@ -11,8 +11,6 @@ _mate_packages:
     - NetworkManager
   Debian:
     - mate-desktop-environment
-  # Ubuntu:
-  #   - ubuntu-mate-desktop
   Suse:
     - patterns-mate-mate
 
