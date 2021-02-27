@@ -16,12 +16,8 @@ molecule:
   retry: 1
   parallel:
     matrix:
-      - image: "alpine"
-        tag: "latest"
       - image: "centos"
         tag: "7"
-      - image: "centos"
-        tag: "latest"
       - image: "debian"
         tag: "latest"
       - image: "debian"

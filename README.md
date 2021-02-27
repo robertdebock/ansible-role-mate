@@ -62,8 +62,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 
 |container|tags|
 |---------|----|
-|alpine|all|
-|el|7, 8|
+|el|7|
 |debian|buster, bullseye|
 |fedora|all|
 |opensuse|all|
@@ -81,6 +80,7 @@ Some variarations of the build matrix do not work. These are the variations and 
 
 | variation                 | reason                 |
 |---------------------------|------------------------|
+| alpine | Segmentation fault (core dumped) |
 | centos:8 | MATE is not available |
 
 

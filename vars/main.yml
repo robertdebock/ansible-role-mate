@@ -2,10 +2,6 @@
 # vars file for mate
 
 _mate_packages:
-  Alpine:
-    - mate-desktop
-    - mate-desktop-environment
-    - mate-session-manager
   RedHat:
     - "@mate-desktop"
     - NetworkManager
