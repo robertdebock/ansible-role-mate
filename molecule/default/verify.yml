@@ -6,4 +6,5 @@
 
   tasks:
     - name: check mate-session
-      command: mate-session --help
+      ansible.builtin.command:
+        cmd: mate-session --help
