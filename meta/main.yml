@@ -9,8 +9,6 @@ galaxy_info:
   min_ansible_version: "2.10"
 
   platforms:
-    - name: EL
-      versions:
     - name: Debian
       versions:
         - buster
