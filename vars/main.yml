@@ -4,17 +4,17 @@
 _mate_packages:
   Debian:
     - mate-desktop-environment
-  RedHat: &RHEL
+  RedHat: &redhat_packages
     - "@mate-desktop"
     - NetworkManager
-  Rocky: *RHEL
+  Rocky: *redhat_packages
   Suse:
     - patterns-mate-mate
 
 mate_packages: "{{ _mate_packages[ansible_os_family] }}"
 
 _mate_exclude:
-  RedHat: &RHEL "{{ ansible_distribution | lower }}-release-matecompiz"
-  Rocky: *RHEL
+  RedHat: &redhat_exclude "{{ ansible_distribution | lower }}-release-matecompiz"
+  Rocky: *redhat_exclude
 
 mate_exclude: "{{ _mate_exclude[ansible_os_family] }}"
