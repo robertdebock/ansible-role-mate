@@ -1,4 +1,4 @@
-# Ansible role [mate](#mate)
+# [Ansible role mate](#mate)
 
 Install MATE on your system.
 
