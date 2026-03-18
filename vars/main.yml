@@ -10,6 +10,6 @@ _mate_packages:
   Suse:
     - patterns-mate-mate
 
-mate_packages: "{{ _mate_packages[ansible_os_family] }}"
+mate_packages: "{{ _mate_packages[ansible_facts['os_family']] }}"
 
-mate_exclude: "{{ ansible_distribution | lower }}-release-matecompiz"
+mate_exclude: "{{ ansible_facts['distribution'] | lower }}-release-matecompiz"
